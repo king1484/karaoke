@@ -1,3 +1,4 @@
 audio-separator
 pydub
 spotdl
+streamlit
