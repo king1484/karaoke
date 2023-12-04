@@ -20,7 +20,7 @@ if button and uploaded_file:
             f.write(audio_content)
 
         separator = Separator(audio_path, model_name='UVR-MDX-NET-Inst_HQ_3', 
-                              use_cuda=True, primary_stem_path=f"music{uuid_str}.wav", output_single_stem="instrumental")
+                                    primary_stem_path=f"music{uuid_str}.wav", output_single_stem="instrumental")
         primary_stem_path = separator.separate()
         
         sound = AudioSegment.from_wav(f"music{uuid_str}.wav")
